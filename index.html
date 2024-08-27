@@ -11,20 +11,101 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font google link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font icon cdn here  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custimise color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'primary-color': '#ABEF5F',
+                'secondary-color': '#1C1C1C',
+                'round-color' : 'rgb(233, 233, 233);',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- style tag css here -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <!-- style tag css here -->
-  <body>
+  <!-- body container -->
+  <body class="font-manrope">
     <!-- header section start here  -->
-    <header>
-
+    <header class="md:w-11/12 md:mx-auto ">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="flex space-x-3">
+                <div class=" bg-[#ABEF5F] rounded-full p-2">
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                </div>
+                <a class="text-2xl md:text-3xl font-extrabold">Rinterio</a>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-base">
+                <li><a class="font-bold ">Home</a></li>
+                <li><a class="text-[#737373] ">Services</a></li>
+                <li><a class="text-[#737373] ">Portfolio</a></li>
+                <li><a class="text-[#737373] ">Blogs</a></li>
+                <li><a class="text-[#737373] ">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-6">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="btn bg-primary-color rounded-2xl">
+                <a class="text-base font-bold" >Book Consult</a>
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-secondary-color text-white p-2 rounded-full"></i>
+            </div>
+          </div>
+        </dism
+      </nav>
     </header>
     <!-- main content section start here  -->
-    <main>
-
-    </main>
+    <main></main>
     <!-- footer container section start here -->
-     <footer>
-        
-     </footer>
+    <footer></footer>
   </body>
 </html>
