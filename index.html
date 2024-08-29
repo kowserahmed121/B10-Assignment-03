@@ -39,6 +39,7 @@
               "sec-paragraph-color": " rgb(115, 115, 115)",
               "heading-color": "rgb(33, 33, 33)",
               "sec-btn-color": "rgba(171, 239, 95, 0.5)",
+              "footer-bg": "rgb(28, 28, 28)",
             },
           },
         },
@@ -54,9 +55,9 @@
   <!-- body container -->
   <body class="font-manrope">
     <!-- header section start here  -->
-    <header class="w-11/12 md:mx-auto">
+    <header class="w-11/12 mx-auto">
       <nav>
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 pt-8">
           <div class="navbar-start">
             <div class="flex space-x-3 items-center">
               <div
@@ -86,30 +87,15 @@
               ></i>
             </div>
           </div>
-          <div class="">
-            <div tabindex="0" role="button" class="lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
+          <div class="md:hidden">
+            <i class="fa-solid fa-bars text-xl"></i>
           </div>
         </div>
       </nav>
       <!-- hero section container  -->
       <section class="flex flex-col justify-center items-center gap-y-4 mt-10">
         <img src="./assets/banner.png" alt="hero img container" />
-        <h1 class="text-6xl font-extrabold text-center text-heading-color">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-center text-heading-color">
           A barn house of this design has a striking appearance
         </h1>
         <p class="text-center text-paragraph-color">
@@ -136,7 +122,7 @@
             </div>
             <div class="flex-1 relative space-y-5">
               <img
-                class="absolute top-[-50px] left-[-40px]"
+                class="absolute top-[-50px] left-[-40px] hidden md:flex"
                 src="./assets/Vector.png"
                 alt=""
               />
@@ -178,7 +164,7 @@
       </section>
 
       <!-- Works process container -->
-      <section class="bg-base-200 pt-10 pb-20">
+      <section class="bg-base-200 pt-2 md:pt-10 pb-20">
         <div class="w-11/12 mx-auto">
           <div class="grid place-items-center text-center space-y-3">
             <button
@@ -457,8 +443,96 @@
           </div>
         </div>
       </section>
+
+      <!-- Discus next project section container  -->
+      <section
+        class="bg-[url('./assets/bg.png')] p-12"
+        style="
+          background-image: url(./assets/bg.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <!-- bg-[url('/img/hero-pattern.svg')]" -->
+        <div class="w-11/12 mx-auto">
+          <div class="grid place-items-center text-center space-y-3 mb-20">
+            <button
+              class="flex bg-sec-btn-color p-4 rounded-full items-center gap-x-2 font-bold mb-5"
+            >
+              <i class="fa-solid fa-arrow-right"> </i>
+              <p>Let’s Connect</p>
+            </button>
+            <h2 class="text-4xl font-bold">Let’s Discuss Next Project</h2>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, <br />
+              featuring weathered wood, sleek metal accents.
+            </p>
+          </div>
+
+          <!-- input container section -->
+          <div class="md:grid grid-cols-2 md:gap-5 mb-5">
+            <input
+              type="text"
+              placeholder="First Name*"
+              class="input input-bordered input-md w-full rounded-full mb-5"
+            /><input
+              type="text"
+              placeholder="Last Name*"
+              class="input input-bordered input-md w-full rounded-full mb-5"
+            />
+          </div>
+          <div class="md:grid grid-cols-2 md:gap-5 mb-5">
+            <input
+              type="text"
+              placeholder="Phone Number*"
+              class="input input-bordered input-md w-full rounded-full mb-5 "
+            /><input
+              type="text"
+              placeholder="Email Number*"
+              class="input input-bordered input-md w-full rounded-full mb-5"
+            />
+          </div>
+          
+          <textarea class="textarea textarea-bordered w-full mb-5" placeholder="Write your massage here"></textarea>
+          <div class="btn bg-primary-color rounded-2xl flex">
+            <a class="text-base font-bold">Send Mail</a>
+            <i
+              class="fa-solid fa-arrow-right -rotate-45 bg-secondary-color text-white p-2 rounded-full"
+            ></i>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- footer container section start here -->
-    <footer></footer>
+      <footer class="footer footer-center bg-footer-bg text-base-content rounded p-10">
+        <div >
+          <div class="flex space-x-2 items-center">
+            <div
+              class="bg-[#ABEF5F] rounded-full p-2 h-8 w-8 flex items-center shrink-0"
+            >
+              <i class="fa-solid fa-arrow-right -rotate-45"></i>
+            </div>
+            <a class="text-2xl md:text-3xl text-white font-extrabold">Rinterio</a>
+          </div>
+        </div>
+        <p class="text-sec-paragraph-color">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+        <nav class="md:grid md:grid-flow-col gap-10 text-white">
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">Service</a>
+          <a class="link link-hover">Blog</a>
+          <a class="link link-hover">Portfolio</a>
+          <a class="link link-hover">Contact</a>
+        </nav>
+       
+        <div class="btn bg-primary-color rounded-2xl flex">
+          <a class="text-base font-bold">Book Consult</a>
+          <i
+            class="fa-solid fa-arrow-right -rotate-45 bg-secondary-color text-white p-2 rounded-full"
+          ></i>
+        </div>
+    </footer>
   </body>
 </html>
