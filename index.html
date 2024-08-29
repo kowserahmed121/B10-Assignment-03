@@ -15,25 +15,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..900&display=swap"
       rel="stylesheet"
     />
     <!-- font icon cdn here  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- custimise color -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'primary-color': '#ABEF5F',
-                'secondary-color': '#1C1C1C',
-                'round-color' : 'rgb(233, 233, 233);',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-color": "#ABEF5F",
+              "secondary-color": "#1C1C1C",
+              "round-color": "rgb(233, 233, 233);",
+              "paragraph-color":"rgb(73, 73, 73);",
+              "sec-paragraph-color": " rgb(115, 115, 115)",
+              "heading-color" : "rgb(33, 33, 33)",
+              "sec-btn-color" : "rgba(171, 239, 95, 0.5)"
+            },
+          },
+        },
+      };
+    </script>
     <!-- style tag css here -->
     <style>
       .font-manrope {
@@ -44,10 +54,36 @@
   <!-- body container -->
   <body class="font-manrope">
     <!-- header section start here  -->
-    <header class="md:w-11/12 md:mx-auto ">
+    <header class="md:w-11/12 md:mx-auto">
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
+            <div class="flex space-x-3">
+              <div class="bg-[#ABEF5F] rounded-full p-2">
+                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+              </div>
+              <a class="text-2xl md:text-3xl font-extrabold">Rinterio</a>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-base">
+              <li><a class="font-bold">Home</a></li>
+              <li><a class="text-[#737373]">Services</a></li>
+              <li><a class="text-[#737373]">Portfolio</a></li>
+              <li><a class="text-[#737373]">Blogs</a></li>
+              <li><a class="text-[#737373]">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-6">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="btn bg-primary-color rounded-2xl">
+              <a class="text-base font-bold">Book Consult</a>
+              <i
+                class="fa-solid fa-arrow-right -rotate-45 bg-secondary-color text-white p-2 rounded-full"
+              ></i>
+            </div>
+          </div>
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
@@ -65,47 +101,68 @@
                   />
                 </svg>
               </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-              </ul>
             </div>
-            <div class="flex space-x-3">
-                <div class=" bg-[#ABEF5F] rounded-full p-2">
-                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
-                </div>
-                <a class="text-2xl md:text-3xl font-extrabold">Rinterio</a>
-            </div>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-base">
-                <li><a class="font-bold ">Home</a></li>
-                <li><a class="text-[#737373] ">Services</a></li>
-                <li><a class="text-[#737373] ">Portfolio</a></li>
-                <li><a class="text-[#737373] ">Blogs</a></li>
-                <li><a class="text-[#737373] ">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end space-x-6">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <div class="btn bg-primary-color rounded-2xl">
-                <a class="text-base font-bold" >Book Consult</a>
-                <i class="fa-solid fa-arrow-right -rotate-45 bg-secondary-color text-white p-2 rounded-full"></i>
-            </div>
-          </div>
-        </dism
+          
+        </div>
       </nav>
+      <!-- hero section container  -->
+      <section class="flex flex-col justify-center items-center gap-y-4 mt-10">
+        <img src="./assets/banner.png" alt="hero img container">
+        <h1 class="text-6xl font-extrabold text-center text-heading-color">A barn house of this design has a striking appearance</h1>
+        <p class="text-center text-paragraph-color">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+        <div class="btn bg-sec-btn-color rounded-2xl">
+          <a class="text-base font-bold">Book Consult</a>
+          <i
+            class="fa-solid fa-arrow-right -rotate-45 bg-primary-color p-2 rounded-full"
+          ></i>
+        </div>
+      </section>
     </header>
     <!-- main content section start here  -->
-    <main></main>
+    <main>
+      <!-- live able space container -->
+       <section class="hero bg-base-200 mt-16">
+        <div class="md:w-11/12 md:mx-auto">
+          <div class="hero-content flex-col lg:flex-row-reverse gap-x-16 py-24">
+            <div class="flex-1">
+              <img
+              src="./assets/Rectangle.png"
+              class="w-full rounded-lg" />
+            </div>
+            <div class="flex-1 relative space-y-5">
+              <img class="absolute top-[-50px] left-[-40px]" src="./assets/Vector.png" alt="">
+              <div class="font-extrabold">
+                <i
+                class="fa-solid fa-arrow-right bg-white p-4 rounded-full"
+              > About Us</i>
+              </div>
+              <h1 class="text-5xl font-bold">Box Office News!</h1>
+              <p class="py-2">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                quasi. In deleniti eaque aut repudiandae et a id nisi.
+              </p>
+              <div class="flex bg-white p-5 mb-3 rounded-md gap-x-5">
+                <img src="./assets/commercial.png" alt="">
+                <div>
+                  <h4 class="font-bold mb-2">Commercial</h4>
+                  <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                </div>
+              </div>
+              <div class="flex bg-white p-5 rounded-md gap-x-5">
+                <img src="./assets/residential.png" alt="">
+                <div>
+                  <h4 class="font-bold mb-2">Commercial</h4>
+                  <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+    </main>
     <!-- footer container section start here -->
-    <footer></footer>
+    <footer>
+
+    </footer>
   </body>
 </html>
